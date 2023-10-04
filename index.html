@@ -50,20 +50,24 @@
                 <img src="img/language.png" alt="">
                 <div>English</div>
                 <span class="arrow_carrot-down"></span>
-                <ul>
-                    <li><a href="#">Spanis</a></li>
-                    <li><a href="#">English</a></li>
+                <ul class="lang-picker">
+                    <li><a href="#" id="russian">Russian</a></li>
+                    <li><a href="#" id="english">English</a></li>
+                    <li><a href="#" id="iranian">Iranian</a></li>
+                    <li><a href="#" id="chinese">Chinese</a></li>
+                    <li><a href="#" id="uzbek">Uzbek</a></li>
+                    <li><a href="#" id="arab">Arab</a></li>
                 </ul>
             </div>
             <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Связаться</a>
+                <a href="#" data-i18n="header.call"><i class="fa fa-user"></i> Связаться</a>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Главная страница</a></li>
-                <li><a href="./shop-grid.html">Каталог</a></li>
-                <li><a href="#">О нас</a>
+                <li class="active"><a href="./index.html" data-i18n="header.hero">Главная страница</a></li>
+                <li><a href="./shop-grid.html" data-i18n="header.shop">Каталог</a></li>
+                <li><a href="#about" data-i18n="header.about">О нас</a>
                     <!-- <ul class="header__menu__dropdown">
                         <li><a href="./shop-details.html">Shop Details</a></li>
                         <li><a href="./shoping-cart.html">Shoping Cart</a></li>
@@ -71,8 +75,8 @@
                         <li><a href="./blog-details.html">Blog Details</a></li>
                     </ul> -->
                 </li>
-                <li><a href="./blog.html">Услуги</a></li>
-                <li><a href="./contact.html">Контакты</a></li>
+                <li><a href="./blog.html" data-i18n="header.service">Услуги</a></li>
+                <li><a href="./contact.html" data-i18n="header.contact">Контакты</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -84,8 +88,8 @@
         </div>
         <div class="humberger__menu__contact">
             <ul>
-                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                <li>Бесплатная доставка для всех заказов на сумму 99$</li>
+                <li><i class="fa fa-envelope"></i> info@imperiasg.uz</li>
+                <li>Мировой ассортимент на вашем столе.</li>
             </ul>
         </div>
     </div>
@@ -99,8 +103,8 @@
                     <div class="col-lg-6 col-md-6">
                         <div class="header__top__left">
                             <ul>
-                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                                <li>Бесплатная доставка для всех заказов на сумму 99$</li>
+                                <li><i class="fa fa-envelope"></i> info@imperiasg.uz</li>
+                                <li>Мировой ассортимент на вашем столе.</li>
                             </ul>
                         </div>
                     </div>
@@ -116,13 +120,17 @@
                                 <img src="img/language.png" alt="">
                                 <div>English</div>
                                 <span class="arrow_carrot-down"></span>
-                                <ul>
-                                    <li><a href="#">Spanis</a></li>
-                                    <li><a href="#">English</a></li>
+                                <ul class="lang-picker">
+                                    <li><a href="#" id="russian">Russian</a></li>
+                                    <li><a href="#" id="english">English</a></li>
+                                    <li><a href="#" id="iranian">Iranian</a></li>
+                                    <li><a href="#" id="chinese">Chinese</a></li>
+                                    <li><a href="#" id="uzbek">Uzbek</a></li>
+                                    <li><a href="#" id="arab">Arab</a></li>
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Связаться</a>
+                                <a href="#" data-i18n="header.call"><i class="fa fa-user"></i> Связаться</a>
                             </div>
                         </div>
                     </div>
@@ -139,9 +147,9 @@
                 <div class="col-lg-9">
                     <nav class="header__menu d-flex align-items-center justify-content-end">
                         <ul>
-                            <li class="active"><a href="./index.html">Главная страница</a></li>
-                            <li><a href="./shop-grid.html">Каталог</a></li>
-                            <li><a href="#">О нас</a>
+                            <li class="active"><a href="./index.html" data-i18n="header.hero">Главная страница</a></li>
+                            <li><a href="./shop-grid.html" data-i18n="header.shop">Каталог</a></li>
+                            <li><a href="#" data-i18n="header.about">О нас</a>
                                 <!-- <ul class="header__menu__dropdown">
                                     <li><a href="./shop-details.html">Shop Details</a></li>
                                     <li><a href="./shoping-cart.html">Shoping Cart</a></li>
@@ -149,8 +157,8 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul> -->
                             </li>
-                            <li><a href="./blog.html">Услуги</a></li>
-                            <li><a href="./contact.html">Контакты</a></li>
+                            <li><a href="./blog.html" data-i18n="header.service">Услуги</a></li>
+                            <li><a href="./contact.html" data-i18n="header.contact">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -213,10 +221,17 @@
                                 <i class="fa fa-phone"></i>
                             </div>
                             <div class="hero__search__phone__text">
-                                <h5>+65 11.188.888</h5>
-                                <span>поддержка 24/7</span>
+                                <h5>+998 33 622-25-25</h5>
+                                <!-- <span>поддержка 24/7</span> -->
+                                <h5>info@imperiasg.uz</h5>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <h1 style="font-size: 39px;
+    margin-bottom: 23px;
+    font-weight: 900;
+    color: #c71719;">Мировой ассортимент на вашем столе.</h1>
                     </div>
                     <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
                         <div class="hero__text">
@@ -239,27 +254,27 @@
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Fresh Fruit</a></h5>
+                            <h5><a href="#">Свежие фрукты</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
+                            <h5><a href="#">Сухофрукт</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
+                            <h5><a href="#">Овощи</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                            <h5><a href="#">Напитки</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                            <h5><a href="#">Мясо</a></h5>
                         </div>
                     </div>
                 </div>
@@ -893,26 +908,34 @@
             </div>
             <h3 align="center">Наши халяльные импортные услуги</h3>
             <p align="center" class="p_title">Мы предоставляем широкий спектр услуг по импорту халяльных продуктов, включая</p>
-            <div class="parent">
-                <div class="child" data-aos="fade-up" data-aos-duration="300">
-                    <i class='bx bxs-drink'></i>
-                    <h4 class="mb-2">Импорт напитков</h4>
-                    <p>Мы импортируем разнообразные халяльные напитки, гарантируя вам и вашим клиентам великолепный вкус и качество.</p>
+            <div class="row align-items-stretch">
+                <div class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
+                    <div class="card">
+                        <i class='bx bxs-drink'></i>
+                        <h4 class="mb-2">Импорт напитков</h4>
+                        <p>Мы импортируем разнообразные халяльные напитки, гарантируя вам и вашим клиентам великолепный вкус и качество.</p>
+                    </div>
                 </div>
-                <div class="child" data-aos="fade-up" data-aos-duration="300">
-                    <i class='bx bxs-drink'></i>
-                    <h4 class="mb-2">Импорт мяса</h4>
-                    <p>Наш выбор включает куриное и безональное мясо, прошедшие строгий контроль качества и сертификацию.</p>
+                <div class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
+                    <div class="card">
+                        <i class='bx bxs-drink'></i>
+                        <h4 class="mb-2">Импорт мяса</h4>
+                        <p>Наш выбор включает куриное и безональное мясо, прошедшие строгий контроль качества и сертификацию.</p>
+                    </div>
                 </div>
-                <div class="child" data-aos="fade-up" data-aos-duration="300">
-                    <i class='bx bxs-drink'></i>
-                    <h4 class="mb-2">Импорт масла и сахара</h4>
-                    <p>Наши продукты питания, такие как масло и сахар, всегда высшего качества и соответствуют стандартам халяль.</p>
+                <div class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
+                    <div class="card">
+                        <i class='bx bxs-drink'></i>
+                        <h4 class="mb-2">Импорт масла и сахара</h4>
+                        <p>Наши продукты питания, такие как масло и сахар, всегда высшего качества и соответствуют стандартам халяль.</p>
+                    </div>
                 </div>
-                <div class="child" data-aos="fade-up" data-aos-duration="300">
-                    <i class='bx bxs-drink'></i>
-                    <h4 class="mb-2">Импорт консервов</h4>
-                    <p>Мы предлагаем широкий ассортимент консервированных товаров, включая тушенку и многое другое.</p>
+                <div class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
+                    <div class="card">
+                        <i class='bx bxs-drink'></i>
+                        <h4 class="mb-2">Импорт консервов</h4>
+                        <p>Мы предлагаем широкий ассортимент консервированных товаров, включая тушенку и многое другое.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1213,15 +1236,15 @@
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Address: 60-49 Road 11378 New York</li>
-                            <li>Phone: +65 11.188.888</li>
-                            <li>Email: hello@colorlib.com</li>
+                            <li>Адрес 100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом </li>
+                            <li>Телефон: +998 33 622-25-25</li>
+                            <li>Электронная почта: info@imperiasg.uz</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Useful Links</h6>
+                        <h6>Полезные ссылки</h6>
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">About Our Shop</a></li>
@@ -1242,11 +1265,11 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Join Our Newsletter Now</h6>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <h6>Подпишитесь на нашу рассылку прямо сейчас</h6>
+                        <p>Получайте по электронной почте обновления о наших последних магазинах и специальных предложениях.</p>
                         <form action="#">
-                            <input type="text" placeholder="Enter your mail">
-                            <button type="submit" class="site-btn">Subscribe</button>
+                            <input type="text" placeholder="Введите свою почту">
+                            <button type="submit" class="site-btn">Подписаться</button>
                         </form>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -1260,9 +1283,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__copyright">
-                        <div class="footer__copyright__text"><p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></div>
+                        <div class="footer__copyright__text"><p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://menz.uz" target="_blank">MENZ</a></p></div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
                     </div>
                 </div>
@@ -1280,6 +1302,9 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Localization i18n -->
+    <script src="js/i18n.js"></script>
 
 
 

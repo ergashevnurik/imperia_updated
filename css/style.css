@@ -772,7 +772,7 @@ ol {
 }
 
 .categories__item h5 a {
-	font-size: 18px;
+	font-size: 14px;
 	color: #1c1c1c;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -933,6 +933,7 @@ ol {
 }
 
 .featured__item__text h6 {
+	text-transform: uppercase;
 	margin-bottom: 10px;
 }
 
@@ -3494,7 +3495,7 @@ ol {
   width: calc(100% / 3.5);
   padding: 20px;
   margin: 12px;
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 15px;
   text-align: center;
 }
@@ -3518,6 +3519,11 @@ ol {
   padding: 18px;
   font-size: 24px;
   border-radius: 50%;
+}
+
+#services .container .row .col-md-3 .card {
+	background-color: #f3f6fb;
+	padding: 15px;
 }
 
 /* Section Service Ends Here */
