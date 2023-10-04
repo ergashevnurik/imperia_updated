@@ -20,43 +20,376 @@
 
  var demoJson = {
  	"header": {
- 		"call": {
- 			"ru": '<i class="fa fa-user"></i> Связаться',
- 			"uz": '<i class="fa fa-user"></i> Aloqaga chiqish',
- 			"en": '<i class="fa fa-user"></i> Call',
- 			"ch": '<i class="fa fa-user"></i> 接觸'
- 		},
- 		"hero": {
- 			"ru": 'Главная страница',
- 			"uz": 'Assosiy saxifa',
- 			"en": 'Home',
- 			"ch": '首頁'
- 		},
- 		"shop": {
- 			"ru": 'Каталог',
- 			"uz": 'Katalog',
- 			"en": 'Catalogue',
- 			"ch": '目錄'
- 		},
- 		"about": {
- 			"ru": 'О нас',
- 			"uz": 'Bizning haqimizda',
- 			"en": 'About',
- 			"ch": '關於我們'
- 		},
- 		"contact": {
- 			"ru": 'Контакты',
- 			"uz": 'Raqamlarimiz',
- 			"en": 'Contacts',
- 			"ch": '聯絡方式'
- 		},
- 		"service": {
- 			"ru": 'Услуги',
- 			"uz": 'Hizmatlar',
- 			"en": 'Services',
- 			"ch": '服務'
- 		}
- 	},
+     "call": {
+       "ru": '<i class="fa fa-user"></i> Связаться',
+       "uz": '<i class="fa fa-user"></i> Aloqaga chiqish',
+       "en": '<i class="fa fa-user"></i> Call',
+       "ch": '<i class="fa fa-user"></i> 接觸',
+       "ir": "تماس",
+       "ar": "اتصل",
+     },
+     "hero": {
+       "ru": 'Главная страница',
+       "uz": 'Assosiy saxifa',
+       "en": 'Home',
+       "ch": '首頁',
+      "ir": "صفحه اصلی",
+      "ar": "الصفحة الرئيسية"
+     },
+     "shop": {
+       "ru": 'Каталог',
+       "uz": 'Katalog',
+       "en": 'Catalogue',
+       "ch": '目錄',
+      "ir": "کاتالوگ",
+      "ar": "كتالوج",
+     },
+     "about": {
+       "ru": 'О нас',
+       "uz": 'Bizning haqimizda',
+       "en": 'About',
+       "ch": '關於我們',
+      "ir": "درباره ما",
+      "ar": "عنا"
+     },
+     "contact": {
+       "ru": 'Контакты',
+       "uz": 'Raqamlarimiz',
+       "en": 'Contacts',
+       "ch": '聯絡方式',
+      "ir": "تماس",
+      "ar": "جهات الاتصال"
+     },
+     "service": {
+       "ru": 'Услуги',
+       "uz": 'Hizmatlar',
+       "en": 'Services',
+       "ch": '服務',
+      "ir": "خدمات",
+      "ar": "خدمات"
+     }
+   },
+
+   "hero": {
+     "all_categories": {
+       "ru": "Все категории",
+       "en": "All categories",
+       "uz": "Barcha toifalar",
+       "ch": "所有類別",
+      "ir": "همه دسته بندی ها",
+      "ar": "جميع الفئات"
+     },
+     "all_products": {
+       "ru": "Все товары",
+       "en": "All goods",
+       "uz": "Barcha tovarlar",
+       "ch": "所有商品",
+      "ir": "همه کالاها",
+      "ar": "جميع السلع"
+     },
+     "search": {
+       "ru": "ПОИСК",
+       "en": "SEARCH",
+       "uz": "QIDIRMOQ",
+       "ch": "搜尋",
+      "ir": "جستجو",
+      "ar": "البحث"
+     },
+     "title": {
+       "ru": "Мировой ассортимент на вашем столе.",
+       "en": "A global assortment on your table.",
+       "uz": "Sizning stolingizda global assortiment.",
+       "ch": "您餐桌上的全球品種。",
+      "ir": "مجموعه جهانی بر روی میز شما",
+      "ar": "تشكيلة عالمية على طاولتك"
+     },
+     "beverage": {
+       "ru": "Напитки",
+       "en": "Beverages",
+       "uz": "Ichimliklar",
+       "ch": "飲料",
+      "ir": "نوشیدنی ها",
+      "ar": "المشروبات"
+     },
+     "halal": {
+       "ru": "Халяльные <br />Продукты",
+       "en": "Halal <br />Products",
+       "uz": "Halol <br />Mahsulotlar",
+       "ch": "清真<br />產品",
+      "ir": "حلال <br />محصولات",
+      "ar": "حلال < br / > المنتجات"
+     },
+     "delivery": {
+       "ru": "Возможен бесплатный <br /> самовывоз и доставка",
+       "en": "Free <br />pickup and delivery available",
+       "uz": "Bepul <br />olib olish va yetkazib berish mavjud",
+       "ch": "<br />提供免費接送服務",
+      "ir": "رایگان <br /> خود تحویل و تحویل امکان پذیر است",
+      "ar": "< br / > التسليم الذاتي والتسليم ممكن"
+     },
+     "buy": {
+       "ru": "КУПИТЬ СЕЙЧАС",
+       "en": "BUY NOW",
+       "uz": "HOZIR XARID QILISH",
+       "ch": "立即購買",
+      "ir": "همین الان خرید کنید",
+      "ar": "اشتري الآن"
+     },
+     "must_you": {
+       "ru": "Что вам нужно?",
+       "en": "What you need?",
+       "uz": "Sizga nima kerak?",
+       "ch": "你需要什麼",
+      "ir": "چه چیزی نیاز دارید?",
+      "ar": "ماذا تحتاج?"
+     },
+   },
+
+ 	
+   "categories": {
+     "fresh_fruits": {
+       "ru": "Свежие фрукты",
+       "en": "Fresh fruits",
+       "uz": "Yangi uzilgan mevalar",
+       "ch": "新鮮水果",
+       "ar": "فواكه طازجة",
+       "ir": "میوه تازه",
+     },
+     "dry_fruit": {
+       "ru": "Сухофрукт",
+       "en": "Dried fruit",
+       "uz": "Quritilgan mevalar",
+       "ch": "乾果",
+       "ar": "فاكهة مجففة",
+       "ir": "خشکبار",
+     },
+     "all_fruit": {
+       "ru": "Овощи",
+       "en": "Vegetables",
+       "uz": "Sabzavotlar",
+       "ch": "蔬菜",
+       "ar": "خضروات",
+       "ir": "سبزیجات",
+     },
+     "drink_bear": {
+       "ru": "Напитки",
+       "en": "Beverages",
+       "uz": "Ichimliklar",
+       "ch": "飲料",
+       "ar": "المشروبات",
+       "ir": "نوشیدنی ها",
+     },
+     "meat_good": {
+       "ru": "Мясо",
+       "en": "Meat",
+       "uz": "Go'sht",
+       "ch": "肉",
+       "ar": "لحمة",
+       "ir": "گوشت",
+     },
+
+   },
+
+   "about": {
+     "aboutTitle": {
+       "ru": "О нас",
+       "en": "About Us",
+       "uz": "Biz haqimizda",
+       "ch": "關於我們",
+       "ar": "معلومات عنا",
+       "ir": "درباره ما",
+     },
+     "history": {
+       "ru": "История нашей компании",
+       "en": "History of our company",
+       "uz": "Kompaniyamiz tarixi",
+       "ch": "我們公司的歷史",
+       "ar": "تاريخ شركتنا",
+       "ir": "تاریخچه شرکت ما",
+     },
+     "btn": {
+       "ru": "Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке. С тех пор мы уверенно развиваемся, сотрудничая с проверенными производителями и поддерживая самые высокие стандарты качества",
+       "en": "Imperia was founded over twenty years ago with one goal - to provide quality halal food products to the global market. Since then, we have been developing confidently, collaborating with trusted manufacturers and maintaining the highest quality standards.",
+       "uz": "Imperia kompaniyasi bundan yigirma yil muqaddam bir maqsad — jahon bozoriga sifatli halol oziq-ovqat mahsulotlarini yetkazib berish maqsadida tashkil etilgan. O'shandan beri biz ishonchli ishlab chiqaruvchilar bilan hamkorlik qilib, eng yuqori sifat standartlarini saqlab, ishonchli rivojlanmoqdamiz.",
+       "ch": "Imperia 成立於二十多年前，目標只有一個：向全球市場提供優質的清真食品。從那時起，我們一直充滿信心地發展，與值得信賴的製造商合作，並保持最高的品質標準。",
+       "ar": "تأسست شركة إمبيريا منذ أكثر من عشرين عامًا بهدف واحد وهو توفير منتجات غذائية حلال عالية الجودة للسوق العالمية. منذ ذلك الحين، قمنا بالتطوير بثقة، والتعاون مع الشركات المصنعة الموثوقة والحفاظ على أعلى معايير الجودة.",
+       "ir": "بیش از بیست سال پیش با یک هدف تاسیس شد - برای ارائه محصولات غذایی حلال با کیفیت بالا در بازار جهانی. از آن زمان، ما به طور پیوسته در حال توسعه، همکاری با تولید کنندگان اثبات شده و حفظ بالاترین استانداردهای کیفیت است",
+     },
+     "learn_more": {
+       "ru": "Узнать поближе",
+       "en": "Find out more",
+       "uz": "Batafsil ma'lumot oling",
+       "ch": "了解更多",
+       "ar": "اكتشف المزيد",
+       "ir": "نزدیک تر شدن",
+     },
+   },
+
+
+
+   "footer": {
+     "location": {
+       "ru": "Адрес 100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом",
+       "en": "Address 100115: Chilanzar - 17, Bunyodkor Avenue, Shokh Kuchasi, 29 building",
+       "uz": "Manzil 100115: Chilonzor - 17, Bunyodkor shoh ko'chasi, Shox ko'chasi, 29-uy",
+       "ch": "地址 100115：Chilanzar - 17, Bunyodkor Avenue, Shokh Kuchasi, 29 樓",
+       "ar": "العنوان 100115: تشيلانزار - 17، شارع بونيودكور، شوك كوتشاسي، مبنى 29",
+       "ir": "آدرس 100115: چیلانزار - 17 ، Bunedkor Prospekt، Shoh kuchasi، 29 خانه",
+     },
+     "number": {
+       "ru": "Телефон: +998 33 622-25-25",
+       "en": "Phone: +998 33 622-25-25",
+       "uz": "Telefon: +998 33 622-25-25",
+       "ch": "電話：+998 33 622-25-25",
+       "ar": "الهاتف: +998 33 622-25-25",
+       "ir": "تلفن: +998 33 622-25-25",
+     },
+     "email": {
+       "ru": "Электронная почта info@imperiasg.uz:",
+       "en": "Email: info@imperiasg.uz",
+       "uz": "Elektron pochta: info@imperiasg.uz",
+       "ch": "電子郵件：info@imperiasg.uz",
+       "ar": "البريد الإلكتروني: info@Imperiasg.uz",
+       "ir": "ایمیل: info@imperiasg.uz",
+     },
+     "help_link": {
+       "ru": "Полезные ссылки",
+       "en": "useful links",
+       "uz": "foydali havolalar",
+       "ch": "有用的連結",
+       "ar": "روابط مفيدة",
+       "ir": "لینک های مفید",
+     },
+     "follow_me": {
+       "ru": "Подпишитесь на нашу рассылку прямо сейчас",
+       "en": "Subscribe to our newsletter now",
+       "uz": "Bizning yangiliklar byulletenimizga hozir obuna bo'ling",
+       "ch": "立即訂閱我們的電子報",
+       "ar": "إشترك فى صحيفتنا الإخبارية الآن",
+       "ir": "همین حالا در خبرنامه ما عضو شوید",
+     },
+     "secial_email": {
+       "ru": "Получайте по электронной почте обновления о наших последних магазинах и специальных предложениях.",
+       "en": "Receive email updates about our latest stores and special offers",
+       "uz": "Eng so'nggi do'konlarimiz va maxsus takliflarimiz haqida elektron pochta xabarlarini oling",
+       "ch": "接收有關我們最新商店和特別優惠的電子郵件更新",
+       "ar": "احصل على تحديثات عبر البريد الإلكتروني حول أحدث متاجرنا وعروضنا الخاصة",
+       "ir": "دریافت به روز رسانی ایمیل در مورد آخرین فروشگاه های ما و پیشنهادات ویژه",
+     },
+   "your_email": {
+       "ru": "Введите свою почту",
+       "en": "Enter your email",
+       "uz": "Elektron pochtangizni kiriting",
+       "ch": "輸入你的電子郵件信箱",
+       "ar": "أدخل بريدك الإلكتروني",
+       "ir": "پست خود را وارد کنید",
+   },
+   "following": {
+       "ru": "Подписаться",
+       "en": "Subscribe",
+       "uz": "Obuna boʻling",
+       "ch": "訂閱",
+       "ar": "يشترك",
+       "ir": "اشتراک در",
+   }
+ },
+
+   "featured": {
+    "section_title": {
+       "ru": "Рекомендуемый продукт",
+       "en": "Recommended Product",
+       "uz": "Tavsiya etilgan mahsulot",
+       "ch": "推薦產品",
+       "ir": "محصول توصیه شده",
+       "ar": "المنتج الموصى به"
+     },
+     "active": {
+       "ru": "Все",
+       "en": "All",
+       "uz": "Hammasi",
+       "ch": "全部",
+       "ir": "همه",
+       "ar": "الجميع"
+     },
+     "beverage": {
+       "ru": "Напитки",
+       "en": "Beverages",
+       "uz": "Ichimliklar",
+       "ch": "飲料",
+       "ir": "نوشیدنی ها",
+       "ar": "المشروبات"
+     },
+     "chicken": {
+       "ru": "Куринное мясо",
+       "en": "Chicken meat",
+       "uz": "Tovuq go'shti",
+       "ch": "雞肉",
+       "ir": "گوشت مرغ",
+       "ar": "لحم دجاج"
+     },
+     "fish": {
+       "ru": "Рыба",
+       "en": "Fish",
+       "uz": "Baliq",
+       "ch": "魚",
+       "ir": "ماهی",
+       "ar": "سمكة"
+     },
+     "oil": {
+       "ru": "Растительное Масло",
+       "en": "Oil",
+       "uz": "O'simlik moyi",
+       "ch": "植物油",
+       "ir": "روغن گیاهی",
+       "ar": "زيت نباتي"
+     }
+  },
+  "latest_product": {
+     "last": {
+       "ru": "Последние продукты",
+       "en": "Latest Products",
+       "uz": "Eng so'nggi mahsulotlar",
+       "ir": "آخرین محصولات",
+       "ar": "أحدث المنتجات",
+       "ch": "最新產品"
+     },
+     "top":{
+       "ru": "Топ рейтинги",
+       "en": "Top ratings",
+       "uz": "Yuqori reytinglar",
+       "ir": "رتبه های برتر",
+       "ar": "أعلى التقييمات",
+       "ch": "最高收視率",
+
+     },
+     "obzor": {
+       "ru": "Обзор продуктов",
+       "en": "Product overview",
+       "uz": "Mahsulotga umumiy nuqtai",
+       "ir": "نمای کلی محصول",
+       "ar": "نظرة عامة على المنتج",
+       "ch": "產品概述",
+
+     },
+     
+
+   },
+   "blog": {
+   	"title": {
+   		"ru": "Из блога",
+   		"en": "From the blog",
+   		"uz": "Blogdan",
+   		"ir": "از وبلاگ",
+   		"ar": "من المدونة",
+   		"ch": "來自部落格"
+   	}
+   },
+
+
+
+
+
+
 	"demo": {
 		"navbartopFirst": {
 			"ru": "Электронная зона продажи",

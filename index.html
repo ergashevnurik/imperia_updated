@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Ogani Template">
-    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="description" content="Imperia, import beverages, meat, oil, hygiene product">
+    <meta name="keywords" content="Imperia, import, goods, beverages, meat, oil, hygiene product">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Imperia - Import and Export Company</title>
@@ -21,6 +21,11 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -89,7 +94,7 @@
         <div class="humberger__menu__contact">
             <ul>
                 <li><i class="fa fa-envelope"></i> info@imperiasg.uz</li>
-                <li>Мировой ассортимент на вашем столе.</li>
+                <li data-i18n="hero.title">Мировой ассортимент на вашем столе.</li>
             </ul>
         </div>
     </div>
@@ -104,7 +109,7 @@
                         <div class="header__top__left">
                             <ul>
                                 <li><i class="fa fa-envelope"></i> info@imperiasg.uz</li>
-                                <li>Мировой ассортимент на вашем столе.</li>
+                                <li data-i18n="hero.title">Мировой ассортимент на вашем столе.</li>
                             </ul>
                         </div>
                     </div>
@@ -187,7 +192,7 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>Все категории</span>
+                            <span data-i18n="hero.all_categories">Все категории</span>
                         </div>
                         <ul>
                             <li><a href="#">Golden Max - Basil Seed</a></li>
@@ -208,12 +213,12 @@
                     <div class="hero__search">
                         <div class="hero__search__form">
                             <form action="#">
-                                <div class="hero__search__categories">
+                                <div class="hero__search__categories" data-i18n="hero.all_products">
                                     Все товары
                                     <span class="arrow_carrot-down"></span>
                                 </div>
-                                <input type="text" placeholder="Что вам нужно?">
-                                <button type="submit" class="site-btn">ПОИСК</button>
+                                <input type="text" placeholder="Что вам нужно?" data-i18n-placeholder="hero.must_you">
+                                <button type="submit" class="site-btn" data-i18n="hero.search">ПОИСК</button>
                             </form>
                         </div>
                         <div class="hero__search__phone">
@@ -228,17 +233,14 @@
                         </div>
                     </div>
                     <div>
-                        <h1 style="font-size: 39px;
-    margin-bottom: 23px;
-    font-weight: 900;
-    color: #c71719;">Мировой ассортимент на вашем столе.</h1>
+                        <h1 style="font-size: 39px;margin-bottom: 23px;font-weight: 900;color: #c71719;" data-i18n="hero.title">Мировой ассортимент на вашем столе.</h1>
                     </div>
                     <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg">
                         <div class="hero__text">
-                            <span>Напитки</span>
-                            <h2>Халяльные <br />Продукты</h2>
-                            <p>Возможен бесплатный <br> самовывоз и доставка</p>
-                            <a href="#" class="primary-btn">КУПИТЬ СЕЙЧАС</a>
+                            <span data-i18n="hero.beverage">Напитки</span>
+                            <h2 data-i18n="hero.halal">Халяльные <br />Продукты</h2>
+                            <p data-i18n="hero.delivery">Возможен бесплатный <br> самовывоз и доставка</p>
+                            <a href="#" class="primary-btn myBtn" data-i18n="hero.buy">КУПИТЬ СЕЙЧАС</a>
                         </div>
                     </div>
                 </div>
@@ -254,27 +256,27 @@
                 <div class="categories__slider owl-carousel">
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Свежие фрукты</a></h5>
+                            <h5><a href="#" data-i18n="categories.fresh_fruits">Свежие фрукты</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Сухофрукт</a></h5>
+                            <h5><a href="#" data-i18n="categories.dry_fruit">Сухофрукт</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Овощи</a></h5>
+                            <h5><a href="#" data-i18n="categories.all_fruit">Овощи</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">Напитки</a></h5>
+                            <h5><a href="#" data-i18n="categories.drink_bear">Напитки</a></h5>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">Мясо</a></h5>
+                            <h5><a href="#" data-i18n="categories.meat_good">Мясо</a></h5>
                         </div>
                     </div>
                 </div>
@@ -287,16 +289,16 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>О нас</h2>
+                <h2 data-i18n="about.aboutTitle">О нас</h2>
             </div>
             <div class="parent">
                 <div class="child" data-aos="fade-up" data-aos-duration="300">
                     <img src="img/confident-deliveryman-packages.png" width="100%">
                 </div>
                 <div class="child" data-aos="fade-up" data-aos-duration="300">
-                    <h1>История нашей компании</h1>
-                    <p>Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке. С тех пор мы уверенно развиваемся, сотрудничая с проверенными производителями и поддерживая самые высокие стандарты качества.</p>
-                    <a href="">Узнать поближе</a>
+                    <h1 data-i18n="about.history">История нашей компании</h1>
+                    <p data-i18n="about.btn">Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке. С тех пор мы уверенно развиваемся, сотрудничая с проверенными производителями и поддерживая самые высокие стандарты качества.</p>
+                    <a href="#" data-i18n="about.learn_more" class="myBtn">Узнать поближе</a>
                 </div>
             </div>
         </div>
@@ -304,20 +306,20 @@
     <!-- About Section End -->
 
     <!-- Featured Section Begin -->
-    <section class="featured spad">
+    <section class="featured spad" id="featured">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Рекомендуемый продукт</h2>
+                        <h2 data-i18n="featured.section_title">Рекомендуемый продукт</h2>
                     </div>
                     <div class="featured__controls">
                         <ul>
-                            <li class="active" data-filter="*">Все</li>
-                            <li data-filter=".beverage">Напитки</li>
-                            <li data-filter=".fish">Рыба</li>
-                            <li data-filter=".chicken">Куринное мясо</li>
-                            <li data-filter=".oil">Растительное Масло</li>
+                            <li class="active" data-i18n="featured.active">Все</li>
+                            <li data-filter=".beverage" data-i18n="featured.beverage">Напитки</li>
+                            <li data-filter=".fish" data-i18n="featured.fish">Рыба</li>
+                            <li data-filter=".chicken" data-i18n="featured.chicken">Куринное мясо</li>
+                            <li data-filter=".oil" data-i18n="featured.oil">Растительное Масло</li>
                         </ul>
                     </div>
                 </div>
@@ -894,11 +896,11 @@
                     </div>
                 </div>
                 
-
             </div>
         </div>
     </section>
     <!-- Featured Section End -->
+
 
     <!-- Services Section Goes Here -->
     <!-- <section id="services" class="mb-5">
@@ -967,12 +969,12 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Последние продукты</h4>
+                        <h4 data-i18n="latest_product.last">Последние продукты</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_apple.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -981,7 +983,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_BLUEBERRY.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -990,7 +992,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_cherry.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1001,7 +1003,7 @@
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_mango.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1010,7 +1012,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_orange.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1019,7 +1021,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/basil_seed_drink_pineapple.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1032,12 +1034,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Топ рейтинги</h4>
+                         <h4 data-i18n="latest_product.top">Топ рейтинги</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/golden_max_flavored_lemon.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1046,7 +1048,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/golden_max_flavored_mango.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1055,7 +1057,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/goldenmax_aloevera.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1066,7 +1068,7 @@
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/goldenmax_aloeveraV2.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1075,7 +1077,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/goldenmax_MELON.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1084,7 +1086,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/goldenmax_orange.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1097,12 +1099,12 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="latest-product__text">
-                        <h4>Обзор продуктов</h4>
+                        <h4 data-i18n="latest_product.obzor">Обзор продуктов</h4>
                         <div class="latest-product__slider owl-carousel">
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/majtaba_apple.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1111,7 +1113,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/majtaba_appricot.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1120,7 +1122,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/majtaba_cherry.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1131,7 +1133,7 @@
                             <div class="latest-prdouct__slider__item">
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-1.jpg" alt="">
+                                        <img src="img/product/majtaba_peach.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1140,7 +1142,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-2.jpg" alt="">
+                                        <img src="img/product/majtaba_pomegranate.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1149,7 +1151,7 @@
                                 </a>
                                 <a href="#" class="latest-product__item">
                                     <div class="latest-product__item__pic">
-                                        <img src="img/latest-product/lp-3.jpg" alt="">
+                                        <img src="img/product/mashang_cherryV2.png" alt="">
                                     </div>
                                     <div class="latest-product__item__text">
                                         <h6>Crab Pool Security</h6>
@@ -1171,7 +1173,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title from-blog__title">
-                        <h2>Из блога</h2>
+                        <h2 data-i18n="blog.title">Из блога</h2>
                     </div>
                 </div>
             </div>
@@ -1236,15 +1238,15 @@
                             <a href="./index.html"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
-                            <li>Адрес 100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом </li>
-                            <li>Телефон: +998 33 622-25-25</li>
-                            <li>Электронная почта: info@imperiasg.uz</li>
+                            <li data-i18n="footer.location">Адрес 100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом </li>
+                            <li data-i18n="footer.number">Телефон: +998 33 622-25-25</li>
+                            <li data-i18n="footer.email">Электронная почта: info@imperiasg.uz</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
                     <div class="footer__widget">
-                        <h6>Полезные ссылки</h6>
+                        <h6 data-i18n="footer.help_link">Полезные ссылки</h6>
                         <ul>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">About Our Shop</a></li>
@@ -1265,11 +1267,11 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="footer__widget">
-                        <h6>Подпишитесь на нашу рассылку прямо сейчас</h6>
-                        <p>Получайте по электронной почте обновления о наших последних магазинах и специальных предложениях.</p>
+                        <h6 data-i18n="footer.follow_me">Подпишитесь на нашу рассылку прямо сейчас</h6>
+                        <p data-i18n="footer.secial_email">Получайте по электронной почте обновления о наших последних магазинах и специальных предложениях.</p>
                         <form action="#">
-                            <input type="text" placeholder="Введите свою почту">
-                            <button type="submit" class="site-btn">Подписаться</button>
+                            <input type="text" placeholder="Введите свою почту" data-i18n-placeholder="footer.your_email">
+                            <button type="submit" class="site-btn" data-i18n="footer.following">Подписаться</button>
                         </form>
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -1293,6 +1295,37 @@
     </footer>
     <!-- Footer Section End -->
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <!-- <h2>Оставь номер телефона и мы свяжемся</h2> -->
+        </div>
+        <div class="modal-body">
+          <div class="parent">
+            <div class="child">
+                <h1>Оставь Контакты</h1>
+                <br>
+                <p>Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке.</p>
+            </div>
+            <div class="child">
+                <form>
+                    <div class="wrapper">
+                        <input id="phone" type="text" placeholder="Телефон" name="">
+                        <input id="name" type="text" placeholder="Имя" name="">
+                    </div>
+                    <div class="wrapper">
+                        <button class="submit-btn">Запросить Звонок <i class='bx bx-phone-call' ></i></button>
+                    </div>
+                 </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1305,6 +1338,60 @@
 
     <!-- Localization i18n -->
     <script src="js/i18n.js"></script>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.querySelector(".myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+
+          if (event.target.classList.contains('myBtn')) {
+            modal.style.display = "block";
+          }
+
+        }
+    </script>
+
+    <script>
+        // Telegram Bot Contact Request
+
+        document.querySelector('.submit-btn').onclick = function() {
+            let phone = document.querySelector('#phone').value;
+            let name = document.querySelector('#name').value;
+
+            if (phone.length <= 1 && phone === "") {
+                alert("Please fill the phone input");
+            } else {
+                let xHttp = new XMLHttpRequest();
+                let message = "Request from web site Phone: " + phone + " " + "Name: " + name;
+
+                const token = "6547258747:AAFwIMLcYjFQE_ArINeG-bU-GZ064MdJXIU";
+                const chatId = "-4076172247";
+                let url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chatId + '&text=';
+                xHttp.open("GET", url + message, true);
+                xHttp.send();
+
+                alert('Successfully sent');
+            }
+
+        }
+    </script>
 
 
 
