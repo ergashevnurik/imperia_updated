@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow:
+
+sitemap: http://www.imperiask.uz/sitemap.xml
+sitemap: http://www.imperiask.uz/sitemap-images.xml
+
+appName:
+    ...
+    robotsTxt-location: robots.txt

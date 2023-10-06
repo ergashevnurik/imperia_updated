@@ -25,8 +25,8 @@
        "uz": '<i class="fa fa-user"></i> Aloqaga chiqish',
        "en": '<i class="fa fa-user"></i> Call',
        "ch": '<i class="fa fa-user"></i> 接觸',
-       "ir": "تماس",
-       "ar": "اتصل",
+       "ir": '<i class="fa fa-user"></i>تماس"',
+       "ar": '<i class="fa fa-user"></i>اتصل',
      },
      "hero": {
        "ru": 'Главная страница',
@@ -116,8 +116,8 @@
        "en": "Halal <br />Products",
        "uz": "Halol <br />Mahsulotlar",
        "ch": "清真<br />產品",
-      "ir": "حلال <br />محصولات",
-      "ar": "حلال < br / > المنتجات"
+      "ir": "حلال  <br>محصولات",
+      "ar": "حلال  <br> المنتجات"
      },
      "delivery": {
        "ru": "Возможен бесплатный <br /> самовывоз и доставка",
@@ -342,6 +342,14 @@
        "ch": "植物油",
        "ir": "روغن گیاهی",
        "ar": "زيت نباتي"
+     },
+     "hygiene": {
+      "ru": "Средство гигиены",
+      "en": "Hygiene product",
+      "uz": "Gigiena mahsuloti",
+      "ir": "عامل ايجادکننده مواد غذايى",
+      "ar": "منتج النظافة",
+      "ch": "衛生用品"
      }
   },
   "latest_product": {
