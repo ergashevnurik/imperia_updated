@@ -1442,18 +1442,18 @@
         <div class="modal-body">
           <div class="parent">
             <div class="child">
-                <h1>Оставь Контакты</h1>
+                <h1 data-i18n="modal.leave">Оставь Контакты</h1>
                 <br>
-                <p>Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке.</p>
+                <p data-i18n="modal.description">Imperia была основана более двадцати лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке.</p>
             </div>
             <div class="child">
                 <form>
                     <div class="wrapper">
-                        <input id="phone" type="text" placeholder="Телефон" name="">
-                        <input id="name" type="text" placeholder="Имя" name="">
+                        <input id="phone" type="text" placeholder="Телефон" name="" data-i18n-placeholder="modal.phone">
+                        <input id="name" type="text" placeholder="Имя" name="" data-i18n-placeholder="modal.name">
                     </div>
                     <div class="wrapper">
-                        <button class="submit-btn">Запросить Звонок <i class='bx bx-phone-call' ></i></button>
+                        <button class="submit-btn" data-i18n="modal.call">Запросить Звонок <i class='bx bx-phone-call' ></i></button>
                     </div>
                  </form>
             </div>
@@ -1461,6 +1461,11 @@
         </div>
       </div>
     </div>
+
+    <!-- Download Excel Price List Section Goes Here  -->
+    <a href="price_list.xlsx" class="price-list">
+        <i class='bx bx-spreadsheet'></i>
+    </a>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

@@ -393,6 +393,50 @@
    	}
    },
 
+   "modal": {
+    "leave": {
+      "en": "Leave Contacts",
+      "ru": "Оставь Контакты",
+      "uz": "Kontaktlarni qoldiring",
+      "ch": "留下聯絡方式",
+      "ir": "مخاطبین را ترک کنید",
+      "ar": "ترك جهات الاتصال"
+    },
+    "description": {
+      "en": "Imperia was founded over twenty years ago with one goal - to provide quality halal food products to the global market.",
+      "ru": "Imperia была основана более двадцать лет назад с одной целью - предоставить качественную халяльную продукцию питания на мировом рынке.",
+      "uz": "Imperia kompaniyasi bundan yigirma yil muqaddam bir maqsad — jahon bozoriga sifatli halol oziq-ovqat mahsulotlarini yetkazib berish maqsadida tashkil etilgan.",
+      "ch": "Imperia 成立於二十多年前，目標只有一個：向全球市場提供優質的清真食品。",
+      "ir": "Imperia بیش از بیست سال پیش با یک هدف تاسیس شد - برای ارائه محصولات غذایی حلال با کیفیت بالا در بازار جهانی.",
+      "ar": "تأسست شركة إمبيريا منذ أكثر من عشرين عامًا بهدف واحد وهو توفير منتجات غذائية حلال عالية الجودة للسوق العالمية."
+    },
+    "call": {
+      "en": "Request a Call",
+      "ru": "Запросить Звонок",
+      "uz": "Qo'ng'iroqni so'rash",
+      "ch": "請求致電",
+      "ir": "درخواست تماس",
+      "ar": "طلب مكالمة"
+    },
+    "phone": {
+      "en": "Phone",
+      "ru": "Телефон",
+      "uz": "Telefon",
+      "ch": "電話",
+      "ir": "تلفن",
+      "ar": "هاتف"
+    },
+    "name": {
+      "en": "Name",
+      "ru": "Имя",
+      "uz": "Ism",
+      "ch": "姓名",
+      "ir": "نام",
+      "ar": "اسم"
+    }
+
+   },
+
 
 
 

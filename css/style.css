@@ -3931,3 +3931,14 @@ ol {
 	}
 }
 /* Modal Ends Here */
+
+.price-list {
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	padding: 15px 22px;
+	background-color: #99df2f;
+	border-radius: 50%;
+	color: white;
+	font-size: 24px;
+}
