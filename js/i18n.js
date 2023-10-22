@@ -68,7 +68,7 @@
       "ir": "خدمات",
       "ar": "خدمات"
      },
-     {
+     
       "warehouse": {
         "ru": 'Склады',
         "uz": 'Ombor xona',
@@ -77,8 +77,7 @@
         "ir": "",
         "ar": ""
       }
-     }
-   },
+     },
 
    "hero": {
      "all_categories": {
