@@ -278,6 +278,7 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
+                <span data-i18n="about.aboutTitle">О нас</span>
                 <h2 data-i18n="about.aboutTitle">О нас</h2>
             </div>
             <div class="parent">
@@ -300,7 +301,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2 data-i18n="featured.section_title">Рекомендуемый продукт</h2>
+                      <span data-i18n="featured.section_title">Рекомендуемый продукт</span>
+                      <h2 data-i18n="featured.section_title">Рекомендуемый продукт</h2>
                     </div>
                     <h3 data-i18n="featured.chicken" class="tab-text my-2"><b>Курица</b></h3>
                     <!-- <div class="featured__controls">
@@ -2898,6 +2900,78 @@
     </section>
     <!-- Latest Product Section End -->
 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Контакты</span>
+          <h2>Контакты</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3 data-i18n="contact.location">Адрес</h3>
+              <p>100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3 data-i18n="contact.email">Электронная почта</h3>
+              <p>info@imperiasg.uz</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3 data-i18n="contact.number">Телефон</h3>
+              <p>+998 33 622-25-25</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row align-items-stretch" data-aos="fade-up">
+
+          <div class="col-lg-6 ">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11997.057429909893!2d69.19321551061725!3d41.2595796455429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTAwMTE1OiDQp9C40LvQsNC90LfQsNGAIC0gMTcsINCR0YPQvdC10LTQutC-0YAg0L_RgNC-0YHQv9C10LrRgiwg0KjQvtGFINC60YPRh9Cw0YHQuCwgMjkg0LTQvtC8!5e0!3m2!1sru!2s!4v1700117461780!5m2!1sru!2s"style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Имя" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Электронная почта" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Предмет" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Сообщение" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Отправить</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
     <!-- Warehouses Section Goes Here -->
     <!-- <section id="warehouses" class="mt-5">
         <div class="container">
@@ -3063,10 +3137,10 @@
     <footer class="footer spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" style="max-width: 150px;" alt=""></a>
                         </div>
                         <ul>
                             <li data-i18n="footer.location">Адрес 100115: Чиланзар - 17, Бунедкор проспект, Шох кучаси, 29 дом </li>
@@ -3075,25 +3149,24 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                <div class="col-lg-3 col-md-3 col-sm-3">
                     <div class="footer__widget">
                         <h6 data-i18n="footer.help_link">Полезные ссылки</h6>
-                        <img src="img/qr-code.png" width="100%" alt="qr code" style="border-radius: 15px">
+                        <img src="img/qr-code.png" width="100%" alt="qr code" style="max-width: 150px;border-radius: 15px">
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-3 col-md-3">
                     <div class="footer__widget">
                         <h6 data-i18n="footer.follow_me">Подпишитесь на нашу рассылку прямо сейчас</h6>
                         <p data-i18n="footer.secial_email">Получайте по электронной почте обновления о наших последних магазинах и специальных предложениях.</p>
-                        <form action="#">
+                        <!-- <form action="#">
                             <input type="text" placeholder="Введите свою почту" data-i18n-placeholder="footer.your_email">
                             <button type="submit" class="site-btn" data-i18n="footer.following">Подписаться</button>
-                        </form>
+                        </form> -->
                         <div class="footer__widget__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                            <a href="#"><i class="fa fa-telegram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -3102,9 +3175,9 @@
                 <div class="col-lg-12">
                     <div class="footer__copyright">
                         <div class="footer__copyright__text"><p>
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://menz.uz" target="_blank">MENZ</a></p>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Developed</i> by <a href="https://menz.uz" target="_blank">MENZ</a></p>
                         </div>
-                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                        <!-- <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div> -->
                     </div>
                 </div>
             </div>
