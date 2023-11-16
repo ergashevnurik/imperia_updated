@@ -29,6 +29,8 @@
 
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -43,13 +45,6 @@
         <div class="humberger__menu__logo">
             <a href="#"><img src="img/logo.png" alt=""></a>
         </div>
-        <!-- <div class="humberger__menu__cart">
-            <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-            </ul>
-            <div class="header__cart__price">item: <span>$150.00</span></div>
-        </div> -->
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="img/language.png" alt="">
@@ -73,24 +68,17 @@
                 <li class="active"><a href="#" data-i18n="header.hero">Главная страница</a></li>
                 <li><a href="#featured" data-i18n="header.shop">Каталог</a></li>
                 <li><a href="#about" data-i18n="header.about">О нас</a>
-                    <!-- <ul class="header__menu__dropdown">
-                        <li><a href="./shop-details.html">Shop Details</a></li>
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
-                        <li><a href="./blog-details.html">Blog Details</a></li>
-                    </ul> -->
                 </li>
-                <li><a href="#blog" data-i18n="header.service">Услуги</a></li>
-                <li><a href="#blog" data-i18n="header.warehouse">Склады</a></li>
-                <li><a href="#contact" data-i18n="header.contact">Контакты</a></li>
+                <!-- <li><a href="#blog" data-i18n="header.service">Услуги</a></li> -->
+                <li><a href="#warehouses" data-i18n="header.warehouse">Склады</a></li>
+                <li><a href="#" class="myBtn" data-i18n="header.contact">Контакты</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
         <div class="header__top__right__social">
             <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-telegram"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
         </div>
         <div class="humberger__menu__contact">
             <ul>
@@ -118,9 +106,8 @@
                         <div class="header__top__right">
                             <div class="header__top__right__social">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fa fa-telegram"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
                             </div>
                             <div class="header__top__right__language">
                                 <img src="img/language.png" alt="">
@@ -136,7 +123,7 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#" data-i18n="header.call"><i class="fa fa-user"></i> Связаться</a>
+                                <a href="tel:+998336222525" data-i18n="header.call"><i class="fa fa-user"></i> Связаться</a>
                             </div>
                         </div>
                     </div>
@@ -163,9 +150,9 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul> -->
                             </li>
-                            <li><a href="#blog" data-i18n="header.service">Услуги</a></li>
-                            <li><a href="#blog" data-i18n="header.warehouse">Склады</a></li>
-                            <li><a href="#contact" data-i18n="header.contact">Контакты</a></li>
+                            <!-- <li><a href="#blog" data-i18n="header.service">Услуги</a></li> -->
+                            <li><a href="#warehouses" data-i18n="header.warehouse">Склады</a></li>
+                            <li><a href="#" class="myBtn" data-i18n="header.contact">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -256,27 +243,27 @@
         <div class="container">
             <div class="row">
                 <div class="categories__slider owl-carousel">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
                             <h5><a href="#" data-i18n="categories.fresh_fruits">Свежие фрукты</a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
                             <h5><a href="#" data-i18n="categories.dry_fruit">Сухофрукт</a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
                             <h5><a href="#" data-i18n="categories.all_fruit">Овощи</a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
                             <h5><a href="#" data-i18n="categories.drink_bear">Напитки</a></h5>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3" data-aos="fade-up">
                         <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
                             <h5><a href="#" data-i18n="categories.meat_good">Мясо</a></h5>
                         </div>
@@ -315,35 +302,27 @@
                     <div class="section-title">
                         <h2 data-i18n="featured.section_title">Рекомендуемый продукт</h2>
                     </div>
-                    <div class="featured__controls">
+                    <h3 data-i18n="featured.chicken" class="tab-text my-2"><b>Курица</b></h3>
+                    <!-- <div class="featured__controls">
                         <ul>
                             <li class="active" data-i18n="featured.active">Все</li>
+                            <li data-filter=".shin" data-i18n="featured.shin">Голень</li>
+                            <li data-filter=".ham" data-i18n="featured.ham">Окорочка</li>
+                            <li data-filter=".carcass" data-i18n="featured.carcass">Тушка</li>
                             <li data-filter=".beverage" data-i18n="featured.beverage">Напитки</li>
                             <li data-filter=".fish" data-i18n="featured.fish">Рыба</li>
+                            <li data-filter=".meat" data-i18n="featured.meat">Мясные изделия</li>
+                            <li data-filter=".cheese" data-i18n="featured.cheese">Сыр</li>
                             <li data-filter=".chicken" data-i18n="featured.chicken">Куринное мясо</li>
                             <li data-filter=".oil" data-i18n="featured.oil">Растительное Масло</li>
+                            <li data-filter=".choco" data-i18n="featured.choco">Сладости</li>
                             <li data-filter=".hygiene" data-i18n="featured.hygiene">Средство гигиены</li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="row featured__filter">
-                <div class="col-lg-3 col-md-4 col-sm-6 mix fish">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/fish_losos.jpg">
-                            <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">Fish hub - лосось</a></h6>
-                            <h5>221400 uzs</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix chicken">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix carcass">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/голень.jpg">
                             <ul class="featured__item__pic__hover">
@@ -358,9 +337,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage fresh-meat">
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_apple.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/голень.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -368,14 +348,15 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">Golden Max Basil Seed Drink Apple</a></h6>
-                            <h5>6800 uzs</h5>
+                            <h6><a href="#">голень</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage fastfood">
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_BLUEBERRY.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/chicken.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -383,14 +364,23 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">basil seed drink BLUEBERRY</a></h6>
-                            <h5>6800 uzs</h5>
+                            <h6><a href="#">Gedik pilic Ege'den</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage fresh-meat">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.meat" class="tab-text my-2"><b>Мясные изделия</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_cherry.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/боковаячастьтазобедренногоотруба.webp">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -398,14 +388,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">basil seed drink cherry</a></h6>
-                            <h5>6800 uzs</h5>
+                            <h6><a href="#">боковая часть тазобедренного отруба</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage oranges">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_mango.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/верхняячастьтазоюедренногоотруба.jfif">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -413,14 +403,15 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">basil seed drink mango</a></h6>
-                            <h5>6800 uzs</h5>
+                            <h6><a href="#">верхняя часть тазобедренного отруба</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_orange.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/голяшка.webp">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -428,29 +419,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">basil seed drink orange</a></h6>
-                            <h5>6800 uzs</h5>
+                            <h6><a href="#">голяшка</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_pineapple.png">
-                        <ul class="featured__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="featured__item__text">
-                            <h6><a href="#">basil seed drink pineapple</a></h6>
-                            <h5>6800 uzs</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage fastfood">
-                    <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/golden_max_flavored_lemon.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/грудинка.webp">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -458,14 +434,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">golden max flavored lemon</a></h6>
-                            <h5>9000 uzs</h5>
+                            <h6><a href="#">грудинка</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/golden_max_flavored_mango.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/грудинкане.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -473,14 +449,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">golden max flavored mango</a></h6>
-                            <h5>9000 uzs</h5>
+                            <h6><a href="#">грудинка не</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_aloevera.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/касила.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -488,14 +464,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">goldenmax aloevera</a></h6>
-                            <h5>15000 uzs</h5>
+                            <h6><a href="#">касила</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_MELON.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/кускимякоть.jfif">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -503,14 +479,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> goldenmax MELON  </a></h6>
-                            <h5>9000 uzs</h5>
+                            <h6><a href="#">куски мякоть</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_orange.png">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/лопатка.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -518,14 +494,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">  goldenmax orange </a></h6>
-                            <h5>9000 uzs</h5>
+                            <h6><a href="#">лопатка</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_apple.png ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/лопатточношейныйотруб.jfif">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -533,14 +509,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> majtaba apple  </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">лопат-точно шейный отруб</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_appricot.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/наружнаячастьтазобедренногоотруба.jfif">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -548,14 +524,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> majtaba appricot  </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">наружная часть тазобедренного отруба</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_cherry.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/огузок.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -563,14 +539,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> majtaba cherry  </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">огузок</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_peach.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/оковалок.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -578,14 +554,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">majtaba peach   </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">оковалок</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_pomegranate.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/передняяфилейнаячастьлопатки.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -593,14 +569,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">majtaba pomegranate   </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">передняя филейная часть лопатки</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_cherryV2.png ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/рулька.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -608,14 +584,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> mashang cherry </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">рулька</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_peachV2.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/стриплоин.jpg">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -623,14 +599,14 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#">mashang peach  </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">стриплоин</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
                     <div class="featured__item">
-                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_pomegranateV2.png  ">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/тендерлоин.png">
                             <ul class="featured__item__pic__hover">
                                 <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -638,12 +614,51 @@
                             </ul>
                         </div>
                         <div class="featured__item__text">
-                            <h6><a href="#"> mashang pomegranate  </a></h6>
-                            <h5>12000 uzs</h5>
+                            <h6><a href="#">тендерлоин</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/шея.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">шея</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/farsh-govyadina-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Фарш</a></h6>
+                            <!-- <h5>28290 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.maslo" class="tab-text my-2"><b>Масло</b></h3>
+                    <h4 class="smaller-text">Растительное масло</h4>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/lucezarniy.png">
                             <ul class="featured__item__pic__hover">
@@ -658,7 +673,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/oseniybuket.png">
                             <ul class="featured__item__pic__hover">
@@ -673,7 +688,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/bogatovskoe.png">
                             <ul class="featured__item__pic__hover">
@@ -688,7 +703,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/ruskoemaslo.png">
                             <ul class="featured__item__pic__hover">
@@ -703,7 +718,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/kristal.png">
                             <ul class="featured__item__pic__hover">
@@ -718,7 +733,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/sergeevskoe.png">
                             <ul class="featured__item__pic__hover">
@@ -733,7 +748,364 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.maslo" class="tab-text my-2"><b>Масло</b></h3>
+                    <h4 class="smaller-text">Сливочное масло</h4>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/maslo.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Масло сладкосливочное несоленое</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.maslo" class="tab-text my-2"><b>Макароны</b></h3>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/6721667165ab748c72e1b6_medium.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">спагетти - 0,400 гр</a></h6>
+                            <h5>5500 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/grebeshki.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">соломка - 0,400 гр</a></h6>
+                            <h5>5500 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.beverage" class="tab-text my-2"><b>Напитки</b></h3>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                 <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_apple.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Golden Max Basil Seed Drink Apple</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_BLUEBERRY.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">basil seed drink BLUEBERRY</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_cherry.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">basil seed drink cherry</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_mango.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">basil seed drink mango</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_orange.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">basil seed drink orange</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/basil_seed_drink_pineapple.png">
+                        <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">basil seed drink pineapple</a></h6>
+                            <h5>6800 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/golden_max_flavored_lemon.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">golden max flavored lemon</a></h6>
+                            <h5>9000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/golden_max_flavored_mango.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">golden max flavored mango</a></h6>
+                            <h5>9000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_aloevera.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">goldenmax aloevera</a></h6>
+                            <h5>15000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_MELON.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> goldenmax MELON  </a></h6>
+                            <h5>9000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/goldenmax_orange.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">  goldenmax orange </a></h6>
+                            <h5>9000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_apple.png ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> majtaba apple  </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_appricot.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> majtaba appricot  </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_cherry.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> majtaba cherry  </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_peach.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">majtaba peach   </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/majtaba_pomegranate.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">majtaba pomegranate   </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_cherryV2.png ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> mashang cherry </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_peachV2.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">mashang peach  </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/mashang_pomegranateV2.png  ">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> mashang pomegranate  </a></h6>
+                            <h5>12000 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/mojtaba_banaapple.png  ">
                             <ul class="featured__item__pic__hover">
@@ -748,7 +1120,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/mojtaba_mango.png  ">
                             <ul class="featured__item__pic__hover">
@@ -763,7 +1135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/mojtaba_orange.png  ">
                             <ul class="featured__item__pic__hover">
@@ -778,7 +1150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/mojtaba_peneapple.png  ">
                             <ul class="featured__item__pic__hover">
@@ -793,7 +1165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/motaba05apple.png ">
                             <ul class="featured__item__pic__hover">
@@ -808,7 +1180,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/motaba05cherry.png  ">
                             <ul class="featured__item__pic__hover">
@@ -823,7 +1195,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/motaba05mango.png  ">
                             <ul class="featured__item__pic__hover">
@@ -838,7 +1210,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/motaba05pomegranate.png  ">
                             <ul class="featured__item__pic__hover">
@@ -853,7 +1225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/moxito.klubnika-banan.png  ">
                             <ul class="featured__item__pic__hover">
@@ -868,7 +1240,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/moxito.png  ">
                             <ul class="featured__item__pic__hover">
@@ -883,7 +1255,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pahsang_mango.png  ">
                             <ul class="featured__item__pic__hover">
@@ -898,7 +1270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pashang05pomegranate.png  ">
                             <ul class="featured__item__pic__hover">
@@ -913,7 +1285,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pashang_orange.png  ">
                             <ul class="featured__item__pic__hover">
@@ -928,7 +1300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pashang_peach.png ">
                             <ul class="featured__item__pic__hover">
@@ -943,7 +1315,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pashang_pomegranate.png  ">
                             <ul class="featured__item__pic__hover">
@@ -958,7 +1330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/pull.png  ">
                             <ul class="featured__item__pic__hover">
@@ -973,7 +1345,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/san-slavia.png  ">
                             <ul class="featured__item__pic__hover">
@@ -988,7 +1360,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix beverage vegetables">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/san-slavia.vishnya.png  ">
                             <ul class="featured__item__pic__hover">
@@ -1003,7 +1375,499 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.fish" class="tab-text my-2"><b>Рыба</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/fishhub.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Fish hub - лосось</a></h6>
+                            <h5>221400 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/skubrii.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Скумбрия 250+ Pelagia</a></h6>
+                            <h5>51660 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/seldka.webp">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сельдь Pelagia</a></h6>
+                            <h5>29520 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/skumbriya-goryachego-kopcheniya-fileshki.webp">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Скумбрия 400-600 Global</a></h6>
+                            <h5>52890 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/пангасиус.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Пангасиус стейк росс</a></h6>
+                            <h5>30135 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/695_p.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Килька Хамса </a></h6>
+                            <h5>24600 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/Филе-Минтая-свежемороженое.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Филе-Минтая-свежемороженое </a></h6>
+                            <h5>25830 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/филе-масляной-горячего-копчения-600x600.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">филе масляной горячего копчения </a></h6>
+                            <h5>25830 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.sugar" class="tab-text my-2"><b>Сахар</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/991704b76cbaa54a9f50b41f4a78e183.webp">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сахар - 1кг</a></h6>
+                            <h5>12500 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.cheese" class="tab-text my-2"><b>Сыр</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/alisa.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Алиса</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/prujanskiy.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Пружанский</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/tilziter.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Тилзитер</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/slivochniy.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сливочный</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/черныйГрафь.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Черный графь</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/smetankoviy.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сметанковый</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/slivochniyosobiy.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сливочный особый</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.choco" class="tab-text my-2"><b>Крем чиз</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/maskoperne.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Сыр «Маскарпоне», 80% жирности, 0.5 кг упаковка - 500 гр</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/creamcheese-willie-200gr.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Willie - Cream cheese 200 гр</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/creamcheese-willie-350gr.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Willie - Cream cheese 350 гр</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix cheese">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/willie-1kg-cheese.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Willie - Cream cheese 1000 гр</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.choco" class="tab-text my-2"><b>Сырок</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/citronu-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК ЛИМОННЫЙ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/cukurvate-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК СО ВКУСОМ САХАРНОЙ ВАТЫ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/karamele-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК КАРАМЕЛЬНЫЙ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kokos-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК С КОКОСОМ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/riekstiem-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК С ОРЕХАМИ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sokolades-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК С КУСОЧКАМИ ШОКОЛАДА, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sukadem-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК С ЦУКАТАМИ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/vanilla-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК VANILLA, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/zemenu-253x279.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Karamus</a></h6>
+                            <h5>ТВОРОЖНЫЙ СЫРОК КЛУБНИЧНЫЙ, 45Г</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.hygiene" class="tab-text my-2"><b>Средства гигиены</b></h3>
+                    <h4 class="smaller-text">Прокладки</h4>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/sen_comfort_dry_slim_290.jpg">
                             <ul class="featured__item__pic__hover">
@@ -1018,7 +1882,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/sen_comfort_ultra_thin_290.jpg">
                             <ul class="featured__item__pic__hover">
@@ -1033,7 +1897,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/son_comfort_dry.png">
                             <ul class="featured__item__pic__hover">
@@ -1048,7 +1912,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/son_comfort_soft_245.png">
                             <ul class="featured__item__pic__hover">
@@ -1063,7 +1927,211 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort2.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort3.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort4.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort5.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort6.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort7.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort8.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort9.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort10.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort11.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort12.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/soncomfort13.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sen Comfort</a></h6>
+                            <h5>6900 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.hygiene" class="tab-text my-2"><b>Средства гигиены</b></h3>
+                    <h4 class="smaller-text">Зубные щетки</h4>
+                </div>
+            </div>
+
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_Dot_Pro_Soft.webp">
                             <ul class="featured__item__pic__hover">
@@ -1078,7 +2146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_Oral_Care_Soft.png">
                             <ul class="featured__item__pic__hover">
@@ -1093,7 +2161,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_White_Plus_Soft.jpeg">
                             <ul class="featured__item__pic__hover">
@@ -1108,7 +2176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_Aurum_24K_Soft.png">
                             <ul class="featured__item__pic__hover">
@@ -1123,7 +2191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_Oral_Pro_Soft.png">
                             <ul class="featured__item__pic__hover">
@@ -1138,7 +2206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix hygiene">
                     <div class="featured__item">
                         <div class="featured__item__pic set-bg" data-setbg="img/product/CVDENT_In-Brush_Soft.jfif">
                             <ul class="featured__item__pic__hover">
@@ -1154,6 +2222,412 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.choco" class="tab-text my-2"><b>Сладости</b></h3>
+                    <h4 class="smaller-text">Шоколадные конфеты</h4>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon2.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon3.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon4.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon6.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon7.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix choco">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/sorbon8.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Sorbon</a></h6>
+                            <!-- <h5>221400 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 data-i18n="featured.choco" class="tab-text my-2"><b>Соусы</b></h3>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/ketchup-kalleh-1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Кетчуп соус “Kalleh” - 600гр </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh1.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh2.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh3.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh4.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh5.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh6.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix oil">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/kalleh7.jpg">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#"> Соус “Kalleh” </a></h6>
+                            <!-- <h5>13700 uzs</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat1.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat2.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat3.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat4.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat5.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat6.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat7.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat8.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div>
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-4 col-sm-6 mix meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg" data-setbg="img/product/meat9.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Говядина</a></h6>
+                            <h5>28290 uzs</h5>
+                        </div>
+                    </div>
+                </div> -->            
+                
+            </div>
         </div>
     </section>
     <!-- Featured Section End -->
@@ -1168,7 +2642,7 @@
             <h3 align="center">Наши халяльные импортные услуги</h3>
             <p align="center" class="p_title">Мы предоставляем широкий спектр услуг по импорту халяльных продуктов, включая</p>
             <div class="row align-items-stretch">
-                <div class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
+                <div  data-aos="flip-right" data-aos-duration="300" class="col-lg-3 col-md-3 col-sm-3" data-aos="fade-up" data-aos-duration="300">
                     <div class="card">
                         <i class='bx bxs-drink'></i>
                         <h4 class="mb-2">Импорт напитков</h4>
@@ -1425,7 +2899,7 @@
     <!-- Latest Product Section End -->
 
     <!-- Warehouses Section Goes Here -->
-    <section id="warehouses" class="mt-5">
+    <!-- <section id="warehouses" class="mt-5">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="header.warehouse">Склады</h2>
@@ -1441,10 +2915,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Warehouses Section Ends Here -->
 
-    <section id="staff" class="mt-5">
+    <!-- <section id="staff" class="mt-5">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="header.staff">Сотрудники</h2>
@@ -1456,34 +2930,64 @@
                           <i id="left" class="fa fa-angle-left"></i>
                           <ul class="carousel">
                             <li class="card">
-                              <div class="img"><img src="img/1.jpg" alt="img" draggable="false"></div>
+                              <div class="img"><img src="img/1.png" alt="img" draggable="false"></div>
                               <h2>Гулназаров Жавохир</h2>
+                              <p><b> Менеджер торговли</b></p> 
                               <span>+99899-999-40-40</span>
                             </li>
                             <li class="card">
-                              <div class="img"><img src="img/3.jpg" alt="img" draggable="false"></div>
-                              <h2>Ахмажонович Жавохир</h2>
+                              <div class="img"><img src="img/3.png" alt="img" draggable="false"></div>
+                              <h2>Ахмаджонов Жавохир</h2>
+                              <p><b> Менеджер торговли</b></p>
                               <span>+99895-855-15-55</span>
                             </li>
                             <li class="card">
-                              <div class="img"><img src="img/2.jpg" alt="img" draggable="false"></div>
+                              <div class="img"><img src="img/7.png" alt="img" draggable="false"></div>
                               <h2>Мухаммедраупов Азиз</h2>
+                              <p><b> Менеджер торговли</b></p>
                               <span>+99897-747-40-30</span>
                             </li>
                             <li class="card">
-                              <div class="img"><img src="img/4.jpg" alt="img" draggable="false"></div>
+                              <div class="img"><img src="img/4.png" alt="img" draggable="false"></div>
                               <h2>Ахмедов Иномжон</h2>
+                              <p><b> Технолог</b></p>
                               <span>+99890-033-38-02</span>
                             </li>
                             <li class="card">
-                              <div class="img"><img src="img/5.jpg" alt="img" draggable="false"></div>
+                              <div class="img"><img src="img/5.png" alt="img" draggable="false"></div>
                               <h2>Шукуров Азиз</h2>
+                              <p><b> Офис менеджер</b></p>
                               <span>+99897-730-25-85</span>
                             </li>
                             <li class="card">
-                              <div class="img"><img src="img/6.jpg" alt="img" draggable="false"></div>
+                              <div class="img"><img src="img/6.png" alt="img" draggable="false"></div>
                               <h2>Шукуров Абубакир</h2>
+                              <p><b> Офис менеджер</b></p>
                               <span>+99888-009-23-72</span>
+                            </li>
+                            <li class="card">
+                              <div class="img"><img src="img/8.png" alt="img" draggable="false"></div>
+                              <h2>Одилов Миравзал</h2>
+                              <p><b>Начальник отдел логистики</b></p>
+                              <span>+99895-017-88-80</span>
+                            </li>
+                            <li class="card">
+                              <div class="img"><img src="img/9.png" alt="img" draggable="false"></div>
+                              <h2>Холдоров Иброхим</h2>
+                              <p><b> Менеджер торговли</b></p>
+                              <span>+99899-897-17-27</span>
+                            </li>
+                            <li class="card">
+                              <div class="img"><img src="img/10.png" alt="img" draggable="false"></div>
+                              <h2>Мухиддинов Саидкамол</h2>
+                              <p><b>Директор</b></p>
+                              <span>+99899-846-25-25</span>
+                            </li>
+                            <li class="card">
+                              <div class="img"><img src="img/11.png" alt="img" draggable="false"></div>
+                              <h2>Ахмедов Файзулла</h2>
+                              <p><b> Менеджер торговли</b></p>
+                              <span>+99899-811-47-12</span>
                             </li>
                           </ul>
                           <i id="right" class="fa fa-angle-right"></i>
@@ -1492,10 +2996,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Blog Section Begin -->
-    <section class="from-blog spad">
+    <!-- <section class="from-blog spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1552,7 +3056,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Blog Section End -->
 
     <!-- Footer Section Begin -->
@@ -1644,6 +3148,11 @@
         <i class='bx bx-spreadsheet'></i>
     </a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -1688,11 +3197,9 @@
 
     <script>
         // Telegram Bot Contact Request
-
         document.querySelector('.submit-btn').onclick = function() {
             let phone = document.querySelector('#phone').value;
             let name = document.querySelector('#name').value;
-
             if (phone.length <= 1 && phone === "") {
                 alert("Please fill the phone input");
             } else {
@@ -1707,96 +3214,95 @@
 
                 alert('Successfully sent');
             }
-
         }
     </script>
 
     <script type="text/javascript">
-    const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
-const carouselChildrens = [...carousel.children];
+        const wrapper = document.querySelector(".wrapper");
+        const carousel = document.querySelector(".carousel");
+        const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+        const arrowBtns = document.querySelectorAll(".wrapper i");
+        const carouselChildrens = [...carousel.children];
 
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+        let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 
-// Get the number of cards that can fit in the carousel at once
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+        // Get the number of cards that can fit in the carousel at once
+        let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-});
+        // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+        carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+            carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+        });
 
-// Insert copies of the first few cards to end of carousel for infinite scrolling
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-});
+        // Insert copies of the first few cards to end of carousel for infinite scrolling
+        carouselChildrens.slice(0, cardPerView).forEach(card => {
+            carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+        });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
-
-// Add event listeners for the arrow buttons to scroll the carousel left and right
-arrowBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-    });
-});
-
-const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
-    // Records the initial cursor and scroll position of the carousel
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
-}
-
-const dragging = (e) => {
-    if(!isDragging) return; // if isDragging is false return from here
-    // Updates the scroll position of the carousel based on the cursor movement
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-}
-
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove("dragging");
-}
-
-const infiniteScroll = () => {
-    // If the carousel is at the beginning, scroll to the end
-    if(carousel.scrollLeft === 0) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        carousel.classList.remove("no-transition");
-    }
-    // If the carousel is at the end, scroll to the beginning
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");
-    }
 
-    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
-    clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
-}
+        // Add event listeners for the arrow buttons to scroll the carousel left and right
+        arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+            });
+        });
 
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel after every 2500 ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
+        const dragStart = (e) => {
+            isDragging = true;
+            carousel.classList.add("dragging");
+            // Records the initial cursor and scroll position of the carousel
+            startX = e.pageX;
+            startScrollLeft = carousel.scrollLeft;
+        }
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
-</script>
+        const dragging = (e) => {
+            if(!isDragging) return; // if isDragging is false return from here
+            // Updates the scroll position of the carousel based on the cursor movement
+            carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+        }
+
+        const dragStop = () => {
+            isDragging = false;
+            carousel.classList.remove("dragging");
+        }
+
+        const infiniteScroll = () => {
+            // If the carousel is at the beginning, scroll to the end
+            if(carousel.scrollLeft === 0) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                carousel.classList.remove("no-transition");
+            }
+            // If the carousel is at the end, scroll to the beginning
+            else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+                carousel.classList.add("no-transition");
+                carousel.scrollLeft = carousel.offsetWidth;
+                carousel.classList.remove("no-transition");
+            }
+
+            // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+            clearTimeout(timeoutId);
+            if(!wrapper.matches(":hover")) autoPlay();
+        }
+
+        const autoPlay = () => {
+            if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+            // Autoplay the carousel after every 2500 ms
+            timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+        }
+        autoPlay();
+
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("mousemove", dragging);
+        document.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("scroll", infiniteScroll);
+        wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+        wrapper.addEventListener("mouseleave", autoPlay);
+    </script>
 
 
 
